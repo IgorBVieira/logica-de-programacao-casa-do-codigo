@@ -1,0 +1,30 @@
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+    let tanque = 40;
+
+    let caminhoComGasolina = 480;
+    let consumoDeGasolina = caminhoComGasolina / tanque;
+
+    let caminhoComAlcool = 300;
+    let consumoDeAlcool = caminhoComAlcool / tanque;
+
+    document.write("O consumo de gasolina é de: " + Math.round(consumoDeGasolina) + " km/L <br>");
+    document.write("O consumo de alcool é de: " + Math.round(consumoDeAlcool) + " km/L <br>");
+
+
+</script>
+
+<script>
+    let precoDaGasolina = 2.90;
+    let precoDoAlcool = 2.40;
+
+    precoPorKilometroGasolina = precoDaGasolina / tanque;
+    precoPorKilometroAlcool = precoDoAlcool / tanque;
+
+    document.write("o preço da gasolina é de: " + (precoPorKilometroGasolina.toFixed(2)) + " reais <br>");
+    document.write("o preço do alcool é de: " + (precoPorKilometroAlcool.toFixed(2)) + " reais <br>");
+
+    
+    document.write(`O menor preço é: ${Math.min(precoPorKilometroAlcool, precoPorKilometroGasolina)} <br>`);
+</script>
